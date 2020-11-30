@@ -5,6 +5,8 @@
  */
 package sourceCode;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -31,11 +33,11 @@ public class MyCalculator extends javax.swing.JFrame {
     }
     
     public void arithmetic_operation() {
+        long startTime = System.currentTimeMillis();
         String equation = jLabel4.getText() +Double.parseDouble(jTextField1.getText());
         System.out.println(equation);
         List<String> eq = new LinkedList<>(Arrays.asList(equation.split("[+X/-]+")));
         List<String> op = new LinkedList<>(Arrays.asList(equation.split("[1234567890]+")));
-        String[] removeThis = new String[1];
 
         System.out.println(eq.toString());
         System.out.println(op.toString());
@@ -50,73 +52,59 @@ public class MyCalculator extends javax.swing.JFrame {
 
         System.out.println(op.toString());
 
-        if (op.contains("X") || op.contains("/")) {
-            for (int z = 0; z < op.size(); z++) {
-                for (int i = 0; i < count; i++) {
+        for (int z = 0; z < op.size();) {
+            if (op.contains("X") || op.contains("/")) {
+                for (int i = 0; i < op.size(); i++) {
                     if (op.get(i).equals("X")) {
                         temp = Double.parseDouble(eq.get(i)) * Double.parseDouble(eq.get(i + 1));
                         eq.set(i, String.valueOf(temp));
-                        eq.remove(i + 1);
-                        removeThis[0] = op.get(i);
-                        op.remove(removeThis[0]);
+                        eq.remove(i+1);
+                        op.remove(i);
+                        System.out.println(eq.toString());
+                        System.out.println(op.toString());
+                        break;
 
                     } else if (op.get(i).equals("/")) {
                         temp = Double.parseDouble(eq.get(i)) / Double.parseDouble(eq.get(i + 1));
                         eq.set(i, String.valueOf(temp));
                         eq.remove(i + 1);
-                        removeThis[0] = op.get(i);
-                        op.remove(removeThis[0]);
+                        op.remove(i);
+                        System.out.println(eq.toString());
+                        break;
                     }
 
-                    z -= count;
-                    removeThis[0] = "";
                     System.out.println(op.toString());
 
-
                 }
+            } else {
                 for (int j = 0; j < op.size(); j++) {
                     if (op.get(j).equals("+")) {
                         temp = Double.parseDouble(eq.get(j)) + Double.parseDouble(eq.get(j + 1));
-                        removeThis[0] = op.get(j);
-                        op.remove(removeThis[0]);
+                        op.remove(j);
                         eq.set(j, String.valueOf(temp));
                         eq.remove(j + 1);
                         System.out.println(eq.toString());
+                        break;
 
                     } else if (op.get(j).equals("-")) {
                         temp = Double.parseDouble(eq.get(j)) - Double.parseDouble(eq.get(j + 1));
-                        removeThis[0] = op.get(j);
-                        op.remove(removeThis[0]);
+                        op.remove(j);
                         eq.set(j, String.valueOf(temp));
                         eq.remove(j + 1);
+                        System.out.println(eq.toString());
+                        break;
 
                     }
-
-                    removeThis[0] = "";
                 }
             }
-        } else {
-            for (int i = 0; i < op.size(); i++) {
-                if (op.isEmpty()) break;
-                if (op.get(i).equals("+")) {
-                    temp = Double.parseDouble(eq.get(i)) + Double.parseDouble(eq.get(i + 1));
-                    removeThis[0] = op.get(i);
-                    op.remove(removeThis[0]);
-                    eq.set(i, String.valueOf(temp));
-                    eq.remove(i + 1);
 
-                } else if (op.get(i).equals("-")) {
-                    temp = Double.parseDouble(eq.get(i)) - Double.parseDouble(eq.get(i + 1));
-                    removeThis[0] = op.get(i);
-                    op.remove(removeThis[0]);
-                    eq.set(i, String.valueOf(temp));
-                    eq.remove(i + 1);
-                }
-
-                removeThis[0] = "";
-            }
         }
+        System.out.println(eq.toString());
         ans = Double.parseDouble(eq.get(0));
+
+        long endTime = System.currentTimeMillis();
+        NumberFormat formatter = new DecimalFormat("#0.00000");
+        System.out.println("Execution time is " + formatter.format((endTime - startTime) / 1000d) + " seconds");
     }
 
 
