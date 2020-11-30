@@ -34,78 +34,76 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jLabel4" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel1" min="-2" pref="72" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" pref="106" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabel3" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="50" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="a0Button" min="-2" pref="64" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="a4Button" max="32767" attributes="0"/>
-                                          <Component id="a7Button" max="32767" attributes="0"/>
-                                          <Component id="a1Button" max="32767" attributes="0"/>
-                                      </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel1" min="-2" pref="72" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="a5Button" min="-2" pref="64" max="-2" attributes="0"/>
-                                          <Component id="a2Button" min="-2" pref="64" max="-2" attributes="0"/>
-                                          <Component id="a8Button" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" pref="106" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="jLabel3" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="a6Button" pref="61" max="32767" attributes="0"/>
-                                  <Component id="DotButton" max="32767" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="0" pref="50" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="ClearButton" min="-2" pref="76" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="MultiplyButton" min="-2" pref="62" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="DivideButton" pref="61" max="32767" attributes="0"/>
-                                  <Component id="a3Button" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="a9Button" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="a0Button" min="-2" pref="64" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="a4Button" max="32767" attributes="0"/>
+                                                  <Component id="a7Button" max="32767" attributes="0"/>
+                                                  <Component id="a1Button" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="a5Button" min="-2" pref="64" max="-2" attributes="0"/>
+                                                  <Component id="a2Button" min="-2" pref="64" max="-2" attributes="0"/>
+                                                  <Component id="a8Button" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="a6Button" min="-2" pref="61" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="ClearButton" min="-2" pref="76" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="MultiplyButton" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="DivideButton" pref="61" max="32767" attributes="0"/>
+                                          <Component id="a3Button" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="a9Button" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="PlusButton" pref="55" max="32767" attributes="0"/>
+                                      <Component id="MinusButton" pref="55" max="32767" attributes="0"/>
+                                      <Component id="EqualsButton" pref="55" max="32767" attributes="0"/>
+                                      <Component id="BackSpaceButton" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="jRadioButton1" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="PlusButton" pref="55" max="32767" attributes="0"/>
-                              <Component id="MinusButton" pref="55" max="32767" attributes="0"/>
-                              <Component id="EqualsButton" pref="55" max="32767" attributes="0"/>
-                              <Component id="BackSpaceButton" alignment="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="jRadioButton1" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jLabel4" min="-2" pref="122" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -116,9 +114,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" pref="0" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="0" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" pref="22" max="-2" attributes="0"/>
@@ -160,10 +158,7 @@
                           <Component id="a1Button" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DotButton" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                          <Component id="a0Button" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="a0Button" min="-2" pref="34" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -359,17 +354,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="a0ButtonActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="DotButton">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="."/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DotButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="EqualsButton">
